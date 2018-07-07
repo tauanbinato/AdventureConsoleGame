@@ -1,12 +1,13 @@
 
 #include "User.h"
-#include "ViewController.h"
+#include "GameManager.h"
 
 
 int main()
 {
-	ViewController *mainView = new ViewController();
-	mainView->VC_Show_Welcome();
+	GameManager *mainGM = new GameManager();
 
+
+	delete(mainGM);
 	return 0;
 }

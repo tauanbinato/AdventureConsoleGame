@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="GameManager.h" />
     <ClInclude Include="Hunter.h" />
     <ClInclude Include="Mage.h" />
     <ClInclude Include="Orc.h" />
@@ -151,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Enemy.cpp" />
+    <ClCompile Include="GameManager.cpp" />
     <ClCompile Include="Hunter.cpp" />
     <ClCompile Include="Mage.cpp" />
     <ClCompile Include="Main.cpp" />

@@ -10,9 +10,7 @@ ViewController::ViewController()
 }
 
 ViewController::ViewController(User _user, Enemy _enemy)
-	:
-	userInView(_user),
-	enemyinView(_enemy)
+	
 {
 
 }
@@ -38,4 +36,15 @@ void ViewController::VC_Show_Welcome() {
 void ViewController::VC_Show_Login() {
 
 	return;
+}
+
+void ViewController::VC_Register_Username()
+{
+	cout << "I can see you are a new user.." << endl;
+	cout << "Please enter a username:" << endl;
+}
+
+void ViewController::VC_Register_Password()
+{
+	cout << "Please enter a new password:" << endl;
 }

@@ -4,9 +4,7 @@
 
 class ViewController
 {
-private:
-	User userInView;
-	Enemy enemyinView;
+
 
 public:
 	ViewController();
@@ -16,5 +14,7 @@ public:
 	void VC_Show_Failure();
 	void VC_Show_Welcome();
 	void VC_Show_Login();
+	void VC_Register_Username();
+	void VC_Register_Password();
 };
 
