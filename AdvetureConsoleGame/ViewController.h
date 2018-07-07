@@ -2,24 +2,23 @@
 #include "User.h"
 #include "Enemy.h"
 #include <string>
+#include "GameManager.h"
 
-
-class ViewController
+class ViewController : public GameManager
 {
-private:
-	std::string gameVersion;
 
 public:
 	ViewController();
-	ViewController(User _user, Enemy _enemy);
 	~ViewController();
 
+
+	void VC_Show_Menu();
 	void VC_Show_Failure();
 	void VC_Show_Welcome();
 	void VC_Show_Login();
 	void VC_Register_Username();
 	void VC_Register_Password();
 
-	void VC_SetGameVersion(std::string);
+	
 };
 

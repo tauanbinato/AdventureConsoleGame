@@ -5,27 +5,38 @@
 
 GameManager::GameManager()
 {
-	activeView = new ViewController();
-	activeView->VC_SetGameVersion(gameVersion);
-	activeView->VC_Show_Welcome();
-	RegisterUser();
+
+	//activeView = new ViewController();
+	//activeView->VC_SetGameVersion(gameVersion);
+	//activeView->VC_Show_Welcome();
+	//RegisterUser();
+}
+
+void GameManager::GameLoop()
+{
+	bool isEnd = false;
+
+	while (isEnd != true)
+	{
+
+	}
 }
 
 
 GameManager::~GameManager()
 {
-	delete(activeView);
+	//delete(activeView);
 }
 
 // Methods ---------------------------------------------
 
 void GameManager::RegisterUser()
 {	
-	activeView->VC_Register_Username();
+	//activeView->VC_Register_Username();
 	std::string username;
 	std::cin >> username;
 
-	activeView->VC_Register_Password();
+	//activeView->VC_Register_Password();
 	std::string password;
 	std::cin >> password;
 
@@ -33,6 +44,8 @@ void GameManager::RegisterUser()
 	users.push_back(*newUser);
 	
 }
+
+
 
 User GameManager::GetUser(int i)
 {

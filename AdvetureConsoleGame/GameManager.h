@@ -2,20 +2,21 @@
 #include <list>
 #include "User.h"
 #include "Enemy.h"
-#include "ViewController.h"
+
 
 class GameManager
 {
-private:
+protected:
 	
 	std::string gameVersion = "1.0";
 	std::list<User> users;
 	std::list<Enemy> enemys;
 	void RegisterUser();
 
+	void GameLoop();
+
 public:
 	
-	ViewController *activeView;
 
 	GameManager();
 	~GameManager();

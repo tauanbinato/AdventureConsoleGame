@@ -1,13 +1,14 @@
 
 #include "User.h"
 #include "GameManager.h"
+#include "ViewController.h"
 #include <iostream>
 
 int main()
 {
-	//GameManager::gameVersion = 1.0;
-	GameManager *mainGM = nullptr;
-	mainGM = new GameManager();
+	
+	GameManager *mainGM = new GameManager();
+	ViewController *viewC = new ViewController();
 	
 
 	delete(mainGM);
