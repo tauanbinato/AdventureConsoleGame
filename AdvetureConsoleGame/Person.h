@@ -1,6 +1,11 @@
 #pragma once
-class Person
+#include "User.h"
+
+class Person : public User
 {
+
+private:
+	
 public:
 	Person();
 	~Person();

@@ -1,13 +1,12 @@
 
-#include <stdio.h>
-#include <iostream>
+#include "User.h"
+#include "ViewController.h"
 
-using std::cout;
-using std::endl;
 
-int main() {
-
-	cout << "teste" << std::endl;
+int main()
+{
+	ViewController *mainView = new ViewController();
+	mainView->VC_Show_Welcome();
 
 	return 0;
 }
