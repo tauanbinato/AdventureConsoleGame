@@ -1,6 +1,9 @@
 #include "ViewController.h"
 #include <stdio.h>
 #include <iostream>
+#include <iomanip> 
+#include "GameManager.h"
+
 using std::string;
 using std::cout;
 using std::endl;
@@ -10,13 +13,13 @@ ViewController::ViewController()
 }
 
 ViewController::ViewController(User _user, Enemy _enemy)
-	
 {
 
 }
 
 ViewController::~ViewController()
 {
+	
 }
 
 
@@ -28,8 +31,8 @@ void ViewController::VC_Show_Failure() {
 
 void ViewController::VC_Show_Welcome() {
 
-	cout << "Welcome to Adveture Console" << endl;
-	cout << "Press any key to continue.." << endl;
+	cout << "Welcome to Adveture Console ||";
+	cout << " Version " << gameVersion << " || \n" <<endl;
 	return;
 }
 
@@ -47,4 +50,9 @@ void ViewController::VC_Register_Username()
 void ViewController::VC_Register_Password()
 {
 	cout << "Please enter a new password:" << endl;
+}
+
+void ViewController::VC_SetGameVersion(std::string v)
+{
+	gameVersion = v;
 }

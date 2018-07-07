@@ -2,9 +2,12 @@
 #include <iostream>
 #include <string>
 
+
 GameManager::GameManager()
 {
 	activeView = new ViewController();
+	activeView->VC_SetGameVersion(gameVersion);
+	activeView->VC_Show_Welcome();
 	RegisterUser();
 }
 
@@ -31,10 +34,26 @@ void GameManager::RegisterUser()
 	
 }
 
-void GameManager::GetUser(int i)
+User GameManager::GetUser(int i)
 {
+	std::list<User>::iterator it;
+	try {
+		// It returns a new iterator pointing to n position after the
+		// base iterator given as first argument
+		it = std::next(users.begin(), i);
+	}
+	catch (...){
+		
+	}
+	return *it;
 }
 
-//
+/*
+static float GameManager::GetGameVersion()
+{
+	return gameVersion;
+}
+
+*/
 
 

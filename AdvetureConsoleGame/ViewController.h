@@ -1,10 +1,13 @@
 #pragma once
 #include "User.h"
 #include "Enemy.h"
+#include <string>
+
 
 class ViewController
 {
-
+private:
+	std::string gameVersion;
 
 public:
 	ViewController();
@@ -16,5 +19,7 @@ public:
 	void VC_Show_Login();
 	void VC_Register_Username();
 	void VC_Register_Password();
+
+	void VC_SetGameVersion(std::string);
 };
 

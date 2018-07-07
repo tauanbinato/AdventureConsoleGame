@@ -11,5 +11,7 @@ public:
 	User(std::string _username, std::string _password);
 	User();
 	~User();
+
+	std::string GetName();
 };
 

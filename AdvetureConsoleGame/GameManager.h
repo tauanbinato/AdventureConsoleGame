@@ -7,19 +7,22 @@
 class GameManager
 {
 private:
+	
+	std::string gameVersion = "1.0";
 	std::list<User> users;
 	std::list<Enemy> enemys;
-	std::list<int>::iterator it;
+	void RegisterUser();
 
 public:
+	
 	ViewController *activeView;
 
 	GameManager();
 	~GameManager();
 
-	void RegisterUser();
-	
-	
 
+	User GetUser(int i);
+
+	
 };
 
